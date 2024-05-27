@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda por Voz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div id="full-search-container">
+        <div id="full-search">
+        <section style="max-width: 1202px; margin: 0 auto;">
+            <strong id="toggleButtonClose" style="text-align: center; display: block; font-size: 2rem;"><i class="bi bi-x-circle"></i></strong>
+            <div class="intranet-searchbox-container-filter" style="padding: 0.55rem 1rem;">
+                <label for="">Search</label>
+                <select name="" id="">
+                    <option value="">Toda la intranet</option>
+                </select>
+            </div>
+            <section class="intranet-searchbox-container" style="display: flex; flex-direction: row; gap: 12px; align-items: center;">
+                <input autocomplete="off" type="text" name="q" id="intranet-searchbox-query" required minlength="1" placeholder="Buscar aquí...">
+                <button type="submit" id="searchForm" style="appearance: none; background: transparent; border: none; font-size: xx-large;"><i class="bi bi-search"></i></button>
+            </section>
+        
+        
+        
+            <section class="intranet-searchbox-container-tags">
+        
+                <span>Busqueda por voz <i class="beta">Beta</i></span>
+        
+                <button id="startButton" class="microphone-button">
+                    <span><i class="bi bi-mic" id="mic-icon"></i></span>
+                </button>
+        
+                <i style="text-align: center; display: block;">Puedes probar con estos comandos</i>
+                <ul>
+                    <li>Calendario laboral</li>
+                    <li>Talento</li>
+                    <li>Registro Horario</li>
+                </ul>
+            </section>
+        </section>
+    </div>
+    </div>
+    
+
+
+    <header style="background-color: #000;">
+        <div class="header-container" style="padding: 1rem 2rem; max-width: 1202px;width: 100%; margin: 0 auto; display: flex; flex-direction: row; align-items: center;gap: 9px;">
+            <div class="logo">logo</div>
+            <button id="toggleButton" style="flex: 1;">Toggle Search Box</button>
+            <div class="welcome-user">
+                <div class="welcome">
+                    Welcome
+                </div>
+                <div class="fake-avatar">NA</div>
+            </div>
+        </div>
+    </header>
+    <nav style="background-color: #222;"> 
+        <ul style="padding: 1rem 2rem;display: flex;flex-direction: row; align-items: center; gap: 9px;">
+            <li>no se</li>
+            <li>Talento</li>
+            <li>Cultura</li>
+        </ul>
+    </nav>
+
+
+ 
+    <p id="status" style="display: none;">Estado: Inactivo</p>
+    <p id="transcription" style="display: none;">Transcripción: </p>
+    <script src="script.js"></script>
+</body>
+</html>
